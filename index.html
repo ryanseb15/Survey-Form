@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotatsu Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap">
+</head>
+<body>
+    <h1 id="title">Kotatsu Survey Form</h1>
+    <p id="description">We appreciate your interest in helping us improve our app</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" class="inputs" type="text" required placeholder="Enter your name" >
+        <label id="email-label" for="email">Email</label>
+        <input id="email" class="inputs" type="email" required placeholder="Enter your email">
+        <label id="number-label" for="number">Age (Optional)</label>
+        <input id="number" class="inputs" type="number" min="0" max="99" placeholder="Enter your age">
+        <label for="dropdown">What is the language of the content you read?</label>
+        <select id="dropdown" class="inputs">
+            <option disabled selected>Select a language</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Belarusian">Belarusian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Czech">Czech</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Indonesian">Indonesian</option>
+            <option value="Italian">Italian</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Korean">Korean</option>
+            <option value="Polish">Polish</option>
+            <option value="Portuguese">Portuguese</option>
+            <option value="Russian">Russian</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Thai">Thai</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Ukrainian">Ukrainian</option>
+            <option value="Vietnamese">Vietnamese</option>
+        </select>
+        <label>Which type of content do you read the most?</label>
+            <input name="type" type="radio">Manga<br>
+            <input name="type" type="radio">Manhwa<br>
+            <input name="type" type="radio">Manhua
+        <label>What are your favorite features on the app?</label>
+            <input value="Downloader" type="checkbox">Downloader<br>
+            <input value="Favorites" type="checkbox">Favorites<br>
+            <input value="Flow" type="checkbox">Flow<br>
+            <input value="History" type="checkbox">History<br>
+            <input value="Reader" type="checkbox">Reader
+        <label for="comment">Do you have any suggestions?</label>
+        <textarea id="comment" placeholder="Enter your comment here..."></textarea>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
